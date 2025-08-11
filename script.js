@@ -55,10 +55,10 @@ function deleteTask(index) {
   const taskItems = document.querySelectorAll(".task-item");
   const taskText = taskItems[index].querySelector(".task-text");
 
-  // Add strikethrough effect before deleting
+  
   taskText.classList.add("completed");
 
-  // Delay deletion for visual effect
+  
   setTimeout(() => {
     tasks.splice(index, 1);
     renderTasks();
@@ -84,5 +84,6 @@ taskInput.addEventListener("keypress", (e) => {
 });
 
 renderTasks();
+
 
 
